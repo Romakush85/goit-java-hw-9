@@ -32,6 +32,7 @@ public class MyLinkedList<T> {
            last = nextNode;
        }
    }
+
    public int size() {
         return this.size;
    }

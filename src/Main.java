@@ -1,5 +1,4 @@
-import java.util.Arrays;
-import java.util.LinkedList;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -42,6 +41,21 @@ public class Main {
 //        students.clear();
 //        System.out.println(students.toString());
 //        System.out.println(students.size());
+
+        // QUEUE
+
+        MyQueue<String> borrowers = new MyQueue<>();
+        borrowers.add("Yushchenko");
+        borrowers.add("Yanukovych");
+        borrowers.add("Poroshenko");
+        borrowers.add("Zelensky");
+        borrowers.add("Kuchma");
+        borrowers.add("Kravchuk");
+        System.out.println(borrowers.toString());
+        System.out.println(borrowers.size());
+        System.out.println(borrowers.poll());
+        System.out.println(borrowers.toString());
+        System.out.println(borrowers.peek());
 
     }
 }
