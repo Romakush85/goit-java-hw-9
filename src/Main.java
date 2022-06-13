@@ -44,7 +44,7 @@ public class Main {
 
         // QUEUE
 
-        MyQueue<String> borrowers = new MyQueue<>();
+/*        MyQueue<String> borrowers = new MyQueue<>();
         borrowers.add("Yushchenko");
         borrowers.add("Yanukovych");
         borrowers.add("Poroshenko");
@@ -55,7 +55,27 @@ public class Main {
         System.out.println(borrowers.size());
         System.out.println(borrowers.poll());
         System.out.println(borrowers.toString());
-        System.out.println(borrowers.peek());
+        System.out.println(borrowers.peek());*/
+
+        // STACK
+        MyStack<String> methods = new MyStack<>();
+        methods.push("mainMethod");
+        methods.push("method1");
+        methods.push("innerMethod1");
+        methods.push("innerMethod2");
+        methods.push("innerMethod3");
+        System.out.println(methods.toString());
+        System.out.println(methods.size());
+        methods.remove(1);
+        System.out.println(methods.toString());
+        System.out.println(methods.size());
+        System.out.println(methods.peek());
+        System.out.println(methods.pop());
+        System.out.println(methods.toString());
+        System.out.println(methods.size());
+        methods.clear();
+        System.out.println(methods.toString());
+        System.out.println(methods.size());
 
     }
 }
