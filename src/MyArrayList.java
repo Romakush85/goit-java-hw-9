@@ -43,11 +43,11 @@ public class MyArrayList<T> {
     }
 
     public void add(Object value) {
-            this.elemCount++;
             if(this.elemCount == this.capacity) {
                 increase();
             }
-            this.list[elemCount] =(T) value;
+        this.list[elemCount] =(T) value;
+        this.elemCount++;      // shift increment after adding element to list
     }
 
     public int size() {

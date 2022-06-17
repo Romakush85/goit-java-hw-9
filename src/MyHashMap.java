@@ -71,30 +71,33 @@ public class MyHashMap<K, V> {
         return null;
     }
 
-    public void remove(K key) {
+    public boolean remove(K key) {
         if (key == null) throw new NullPointerException("The key can't be null");
         Entry<K, V> removeEntry = new Entry(key, get(key));
         int index = indexFor(removeEntry.hash);
         if (table[index] == null) {
             System.out.println("There is no entry with such key");
-            return;
+             return false;
         }
         Entry<K, V> currEntry = table[index];
         Entry<K, V> prevEntry = null;
-        while (currEntry.next != null) {
+        while (currEntry != null) {
             if (currEntry.key.equals(key)) {
                 if (currEntry.equals(table[index])) {
-                    table[index] = currEntry.next;
+                    currEntry = currEntry.next;
+                    table[index] = currEntry;
                     entriesCount--;
+                    return true;
                 } else {
                     prevEntry.next = currEntry.next;
                     entriesCount--;
+                     return true;
                 }
-                prevEntry = currEntry;
-                currEntry = currEntry.next;
             }
+            prevEntry = currEntry;
+            currEntry = currEntry.next;
         }
-
+        return false;
     }
 
     public void clear() {

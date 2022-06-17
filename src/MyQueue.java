@@ -85,9 +85,12 @@ public class MyQueue<T> {
         Node<T> result = first;
         if(first == null) {
             throw new UnsupportedOperationException("The queue is empty");
+        } else if (first.next == null) {
+            clear();
+            return result;
         }
+        first.next.prev  = null;
         first = first.next;
-        first.next.prev = null;
         first.prev = null;
         size--;
         return result;

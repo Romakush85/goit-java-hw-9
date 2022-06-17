@@ -44,18 +44,25 @@ public class Main {
 
         // QUEUE
 
-/*        MyQueue<String> borrowers = new MyQueue<>();
-        borrowers.add("Yushchenko");
-        borrowers.add("Yanukovych");
-        borrowers.add("Poroshenko");
-        borrowers.add("Zelensky");
-        borrowers.add("Kuchma");
-        borrowers.add("Kravchuk");
-        System.out.println(borrowers.toString());
-        System.out.println(borrowers.size());
-        System.out.println(borrowers.poll());
-        System.out.println(borrowers.toString());
-        System.out.println(borrowers.peek());*/
+//        MyQueue<String> borrowers = new MyQueue<>();
+//        borrowers.add("Yushchenko");
+//        borrowers.add("Yanukovych");
+//        borrowers.add("Poroshenko");
+//        borrowers.add("Zelensky");
+//        borrowers.add("Kuchma");
+//        borrowers.add("Kravchuk");
+//        System.out.println(borrowers.toString());
+//        System.out.println(borrowers.size());
+//        System.out.println(borrowers.peek());
+//        System.out.println(borrowers.toString());
+//        System.out.println(borrowers.poll());
+//        System.out.println(borrowers.poll());
+//        System.out.println(borrowers.poll());
+//        System.out.println(borrowers.poll());
+//        System.out.println(borrowers.size());
+//        System.out.println(borrowers.poll());
+//        System.out.println(borrowers.poll());
+//        System.out.println(borrowers.size());
 
         // STACK
 //        MyStack<String> methods = new MyStack<>();
@@ -80,26 +87,26 @@ public class Main {
         // MyHashMap
         MyHashMap<String, String> users = new MyHashMap<>();
         System.out.println(users.size());
-        users.put("romakush@gmail.com", "Roma");
-        users.put("123321@i.ua", "Troll");
-        users.put("hr@goit.ua", "HR");
-        users.put("romakush@gmail.com", "Roman Kushnir");
-        users.put("put.in@hui.lo", "Vova Pitun");
-        users.put("", "Anonymus");
+//        users.put("romakush@gmail.com", "Roma");
+//        users.put("123321@i.ua", "Troll");
+//        users.put("hr@goit.ua", "HR");
+//        users.put("romakush@gmail.com", "Roman Kushnir");
+//        users.put("put.in@hui.lo", "Vova Pitun");
+//        users.put("", "Anonymus");
 //        users.put(null, "Anonymus");
 //        System.out.println(users.size());
 //        users.clear();
 //        System.out.println(users.size());
 //        System.out.println(users.get("hr@goit.ua"));
 //        System.out.println(users.get("hr@epam.ua"));
-        System.out.println("------------------");
-        System.out.println(users.get("put.in@hui.lo"));
-        System.out.println(users.get(""));
-        System.out.println(users.size());
-        System.out.println("------------------");
-        users.remove("put.in@hui.lo");
-        System.out.println(users.size());
-        System.out.println(users.get("put.in@hui.lo"));
+//        System.out.println("------------------");
+//        System.out.println(users.get("put.in@hui.lo"));
+//        System.out.println(users.get(""));
+//        System.out.println(users.size());
+//        System.out.println("------------------");
+//        users.remove("put.in@hui.lo");
+//        System.out.println(users.size());
+//        System.out.println(users.get("put.in@hui.lo"));
         users.put("CEO@goit.ua", "CEO");
         users.put("mentor1@goit.ua", "Mentor1");
         users.put("mentor2@goit.ua", "Mentor2");
@@ -115,6 +122,10 @@ public class Main {
         users.put("mentor12@goit.ua", "Mentor12");
         users.put("mentor13@goit.ua", "Mentor13");
         System.out.println(users.size());
+        users.remove("mentor8@goit.ua");
+        System.out.println(users.size());
+        System.out.println(users.get("mentor8@goit.ua"));
+
 
     }
 }
